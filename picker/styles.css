@@ -6,7 +6,30 @@ html{
     box-sizing: border-box;
 }
 
+
+h1{
+    text-align: center;
+}
+
+.height-container{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#child{
+    border: 3px solid black;
+}
+.green,
+.purple,
+.blue {
+    padding: 2rem 2rem;
+    cursor: pointer;
 }
