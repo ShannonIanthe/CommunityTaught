@@ -27,5 +27,6 @@ h1Holder.addEventListener('click', sum)
 
 //original variable temp and other variable inputVal
 function sum(){
-    console.log(temp + inputVal)
+    console.log(temp + Number(inputVal))
 }
+ 
