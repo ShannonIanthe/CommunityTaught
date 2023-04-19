@@ -1,4 +1,4 @@
-let age = 17;
+let age = 30;
 
     if (age < 16) {
         console.log('you can not drive')
@@ -15,6 +15,21 @@ let age = 17;
     else if (age < 30) {
         console.log('You can not rent fancy cars affordably')
     }
-    else {
-        console.log('There is nothinig left to look forward to')
+    else (age > 30); {
+        console.log('There is nothing left to look forward to')
     }
+
+    // What are functions?
+    // Functions are a simple set of instructions
+    // Functions are reusable that is why we put the instructions in a function
+
+    //SYNTAX
+    // function name(parameters){
+        //body
+    //}
+    //name(arguments) 
+
+    // --- Harder
+    // On click of the h1
+    // Take the vaue from the input
+    // Place the result of the conditional in the paragraph
