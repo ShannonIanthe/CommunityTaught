@@ -12,3 +12,11 @@ function loop() {
     }
  }
  savage21()
+
+ //There are different kinds of loops
+ //while loop
+ let count = 0;
+ while (count < 5){
+    console.log(count)
+    count++
+ }
