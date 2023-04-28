@@ -94,3 +94,35 @@ if (month === 1){
 
 /*Following second
 Write a program that asks for a time under the form of three information (hours, minutes, seconds). The program calculates and shows the time one second after. Incorrect inputs must be taken into account.*/
+let hour = Number(prompt('What hour is it?'))
+let minute = Number(prompt('What minte is it?'))
+let second = Number(prompt('What second is it?'))
+
+if (second > 90 || second < 0 || minute > 60 || minute < 0 || hour > 23 || hour < 0){
+    console.log('Enter a valid time.')
+} else if ((hour === 23) && (minute === 59) && (seconds === 59)) {
+    hour = 0;
+    minute = 0;
+    second = 0;
+    console.log(`${hour}h ${minute}m ${second}m`)
+} else if ((second <= 59) && (minute <= 59) && (hour <=23)) {
+    hour++;
+    minute = 0;
+    second = 0;
+    console.log(`${hour}h ${minute}m ${second}m`)
+} else if (second < 59 && hour <= 23 && minute <= 59) {
+    second++;
+    console.log(`${hour}h ${minute}m ${second}m`)
+} else if (second <= 59) {
+    second = 0;
+    minute++;
+    console.log(`${hour}h ${minute}m ${second}m`)
+}
+
+//Chapter 4: for loop & while loop
+//Carousel
+let carouselTurns = Number(prompt('How many times you wanna go around?'));
+for (let i = 1; i <= carouselTurns.length; i++) {
+    
+    console.log(i)
+}
