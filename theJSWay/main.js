@@ -123,6 +123,73 @@ if (second > 90 || second < 0 || minute > 60 || minute < 0 || hour > 23 || hour 
 //Carousel
 let carouselTurns = Number(prompt('How many times you wanna go around?'));
 for (let i = 1; i <= carouselTurns.length; i++) {
-    
     console.log(i)
+}
+
+let evenOrOdd = Number(prompt('Pick a number'))
+for (let i = 1; i < evenOrOdd.length; i++){
+    if(i % 2 == 0) {
+        console.log(`${i} is even`)
+    } else {
+        console.log(`${i} is odd`)
+    }
+}
+
+//Input Validation
+/* Write a program that continues to ask the user for a number until the entered number is less than or equal to 100.*/
+
+let number = '';
+while (number > 100){
+    number = prompt('Type a number less than 100')
+}
+ /*
+When you are done with the above, improve the program so that the terminating number is between 50 and 100.*/
+let numberAgain = '';
+    while (50 > numberAgain > 100) {
+        numberAgain = prompt('Pick a number between 50 and 100')
+    }
+
+/* Multiplication table
+Write a program that asks the user for a number, then shows the multiplication table for this number.*/
+
+const numberTwo = parseInt(prompt('Enter an interger: '))
+
+for(let i =0; i < 10; i++){
+    const result = i * numberTwo;
+    console.log(`${numberTwo} * ${i} = ${result}`)
+}
+/*
+When you are done, improve the program so it only accepts numbers between 2 and 9 (use the previous exercise as a blueprint). */    
+
+//not sure how to solve this
+const numberThree = parseInt(prompt('Enter an integer between 2 and 9: '))
+
+for(let i = 0; i < 10; i++){
+    const resultTwo = i * numberThree
+    if(2 <= numberThree <= 9) {
+        console.log(`${numberThree} * ${i} = ${resultTwo}`)  
+    }
+}
+
+/* Neither yes nor no
+Write a program that plays "neither yes, nor no" with the user. Specifically, the program asks the user to enter text until either "yes" or "no" is typed, which ends the game. */
+ const answer = prompt('Yes or No: ')
+
+/* FizzBuzz
+Write a program that shows all numbers between 1 and 100 with the following exceptions:
+
+It shows "Fizz" instead if the number is divisible by 3.
+
+It shows "Buzz" instead if the number is divisible by 5 and not by 3.
+
+When it's done, improve it so that the program shows "FizzBuzz" instead for numbers divisible both by 3 and by 5. */
+
+for(let i = 0; i <= 100; i++){
+    if(i % 3 === 0) {
+        console.log('Fizz')
+    } else if (i % 5 == 0) {
+        console.log('Buzz')
+    } else (i % 15 === 0) 
+        console.log('FizzBuzz')
+    
 }
